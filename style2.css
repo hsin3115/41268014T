@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     background: linear-gradient(135deg, #cb9bff, #93baff);
     margin: 20px;
     padding: 0;
@@ -22,9 +22,10 @@ body {
 
 header h1 {
     text-align: center;
-    color: #333;
+    color: #6a11cb;
     margin-bottom: 20px;
 }
+
 
 form {
     display: flex;
@@ -33,14 +34,15 @@ form {
 }
 
 fieldset {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
+    border: 1px solid #b5a4c4;
+    border-radius: 12px;
+    padding: 20px;
 }
 
 legend {
+    font-size: 18px; 
     font-weight: bold;
-    color: #555;
+    color: #3e3e3e;
 }
 
 .form-group {
@@ -80,7 +82,35 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
 }
 
-.radio-group,
+.radio-group input[type="radio"] {
+    appearance: none; /* 移除預設樣式 */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6a11cb;
+    border-radius: 50%; /* 圓形 */
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.radio-group input[type="radio"]:not(:checked) {
+    background-color: #fff;
+}
+
+/* 選中狀態 */
+.radio-group input[type="radio"]:checked {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+}
+
+/* 點擊時的效果 */
+.radio-group input[type="radio"]:active {
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+    border-radius: 50%; /* 確保陰影也是圓形 */
+}
+
+
+
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
@@ -114,4 +144,13 @@ footer {
     .form-row {
         flex-direction: column;
     }
+}
+
+fieldset legend + .form-group + .form-group {
+    margin-top: 16px; /* 增加上下間隔 */
+}
+
+
+.must{
+    color: red;
 }
