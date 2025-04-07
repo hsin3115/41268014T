@@ -86,7 +86,7 @@ textarea:focus {
     appearance: none; /* 移除預設樣式 */
     width: 16px;
     height: 16px;
-    border: 2px solid #6a11cb;
+    border: 1px solid #6a11cb;
     border-radius: 50%; /* 圓形 */
     outline: none;
     cursor: pointer;
