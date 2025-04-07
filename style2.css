@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Helvetica, sans-serif;
-    background: linear-gradient(135deg, #cb9bff, #93baff);
+    background: linear-gradient(135deg, #7998f6, #ffdcd6);
     margin: 20px;
     padding: 0;
     display: flex;
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    background: #fff;
+    background:rgba(255, 255, 255, 0.8);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -34,7 +34,7 @@ form {
 }
 
 fieldset {
-    border: 1px solid #b5a4c4;
+    border: 1px solid #dbc1e7;
     border-radius: 12px;
     padding: 20px;
 }
@@ -67,19 +67,21 @@ input[type="date"],
 textarea {
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 0px solid #ffffff;
     border-radius: 5px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
     resize: vertical;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #6a11cb;
+    border-color: #ffffff;
     outline: none;
     box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .radio-group input[type="radio"] {
@@ -94,7 +96,7 @@ textarea:focus {
 }
 
 .radio-group input[type="radio"]:not(:checked) {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* 選中狀態 */
@@ -119,7 +121,7 @@ textarea:focus {
 
 button {
     background: #6a11cb;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 15px;
     font-size: 16px;
