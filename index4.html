@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊頁面</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>註冊新帳號</h1>
+        </header>
+        <main>
+            <form id="registerForm" class="form">
+                <fieldset>
+                    <legend>基本資訊</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="username">使用者名稱</label>
+                            <input type="text" id="username" name="username" placeholder="請輸入使用者名稱" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電子郵件</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>密碼設定</legend>
+                    <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+                        <div class="password-strength" id="passwordStrength"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">確認密碼</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="再次輸入密碼" required>
+                    </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>個人資訊</legend>
+                    <div class="form-group">
+                        <label for="birthday">生日</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label>性別</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> 男</label>
+                            <label><input type="radio" name="gender" value="female"> 女</label>
+                            <label><input type="radio" name="gender" value="other"> 其他</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>興趣</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="programming"> 程式設計</label>
+                        <label><input type="checkbox" name="interests" value="web-design"> 網頁設計</label>
+                        <label><input type="checkbox" name="interests" value="ai"> 人工智慧</label>
+                        <label><input type="checkbox" name="interests" value="data-science"> 資料科學</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>自我介紹</legend>
+                    <div class="form-group">
+                        <label for="bio">自我介紹</label>
+                        <textarea id="bio" name="bio" placeholder="請簡單介紹自己..." rows="4"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">註冊</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
